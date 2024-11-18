@@ -1,0 +1,656 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Naruto';
+    src: url(../fonts/ttf/njnaruto.ttf);
+}
+
+@font-face {
+    font-family: 'Anime-Ace';
+    src: url(../fonts/ttf/animeace2_reg.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(https://cdn.theanimegallery.com/theanimegallery/5de39988-7cd8-46b2-9ae1-4a031b83541f-naruto-pc-wallpaper.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-image: linear-gradient(to top, #B15680, #4A7DB1);
+}
+
+header > h1 {
+    text-align: center;
+    padding: 15px;
+    font-size: 2.3em;
+    color: #ff8411;
+    text-shadow: 6px 6px 0px #151745;
+    font-family: 'Naruto', sans-serif;
+    letter-spacing: 2px;
+}
+
+header > h2 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 0.95em;
+    width: 50vw;
+    font-family: 'Naruto';
+    letter-spacing: 2px;
+    color: yellow;
+    text-shadow: 1px 1px 1px black;
+    line-height: 1.5;
+}
+header > h2 > span {
+    font-size: 1.5em;
+    font-family: 'Naruto';
+}
+
+header > nav > ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 50px;
+    background-image: linear-gradient(to top,darkred,rgb(220, 0, 0),darkred);
+    border: 5px solid green;
+    border-left: transparent;
+    border-right: transparent;
+    border-style: double;
+    padding: 10px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.526);
+}
+
+header > nav > ul > li > a {
+    background-image: linear-gradient(to top, green,rgb(0, 191, 0),green);
+    padding: 5px 15px;
+    border: 5px double yellow;
+    border-top: transparent;
+    border-bottom: transparent;
+    color: black;
+    text-decoration: none;
+    color: yellow;
+    transition: all 0.1s;
+    text-shadow: 2px 2px 0px black;
+    font-family: 'Naruto';
+}
+header > nav > ul > li > a:hover {
+    background-image: linear-gradient(to top, rgb(0, 83, 0),rgb(0, 150, 0),rgb(0, 83, 0));
+    font-weight: bold;
+    padding: 5px 20px;
+}
+header > nav > ul > li > a:active {
+    color: rgb(164, 164, 0);
+    font-weight: bold;
+}
+
+main {
+    width: 60vw;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.800);
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.506);
+}
+
+main > .intro_container {
+    width: 98%;
+    margin: 5px auto;
+    text-align: center;
+    background-image: url(../img/Valle_del_Fin.webp);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 15px;
+    line-height: 1.5;
+    border-radius: 10px;
+    border: 5px double #B15680;
+    transition: translate 0.3s ease, box-shadow 0.3s ease;
+}
+
+main > .intro_container:hover {
+    transform: translateZ(50px) scale(1.005);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.169);
+}
+
+main > .intro_container > h1 {
+    font-family: 'Naruto';
+    color: #ED8F10;
+    text-shadow: 3px 4px 0px #151745;
+}
+
+main > .intro_container > h2 {
+    font-size: 1em;
+    font-family: 'Naruto';
+    background-image: linear-gradient(to right, transparent,#ee518a81,transparent);
+    color: #0f6096;
+    text-shadow: 2px 2px 0px black;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+main > .intro_container > h2 > span {
+    font-size: 1.4em;
+    font-family: 'Naruto';
+}
+
+main > .intro_container > p {
+    text-align: justify;
+    font-family: 'Anime-Ace';
+    font-size: 0.8em;
+    line-height: 1.5;
+    text-indent: 1.2em;
+    padding: 3px 0px;
+    background-image: linear-gradient(to right,transparent,#0f609683,transparent);
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+main > .intro_container > .btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+main > .intro_container > .btn > button {
+    width: 20%;
+    margin: 0 auto;
+    padding: 7px;
+    letter-spacing: 1px;
+    border: none;
+    border-left: 10px double red;
+    border-right: 10px double red;
+    color: yellow;
+    transition: all 0.2s;
+    background-image: linear-gradient(to bottom,black,rgb(71, 71, 71),black);
+    text-shadow: 2px 2px 0px black;
+    font-family: 'Naruto';
+}
+main > .intro_container > .btn > button:hover {
+    background-color: rgb(71, 71, 71);
+    width: 22%;
+    color: white;
+    cursor: pointer;
+}
+main > .intro_container > .btn > button:active {
+    width: 18%;
+    background-color: rgb(31, 31, 31);
+    color: rgb(255, 226, 3);
+}
+
+main > .about_content > .about_intro {
+    margin: 5px;
+}
+
+main > .about_content > .about_intro > h1, .services_title {
+    background-image: linear-gradient(to right, #EE518B, transparent);
+    margin-left: 10px;
+    padding: 6.5px 0px 3px 0px;
+    border-radius: 5px 0px 0px 5px;
+    text-indent: 20px;
+    color: #FFAC11;
+    text-shadow: 2px 2px 0px black;
+    font-family: 'Naruto';
+}
+
+main > .about_content > .about_intro > p {
+    text-indent: 1em;
+    padding-top: 10px;
+    width: 95%;
+    text-align: justify;
+    margin: 0 auto;
+    font-family: 'Anime-Ace';
+    font-size: 0.8em;
+    line-height: 1.5;
+}
+
+main > .about_content > .grid_about {
+    display: flex;
+    border: 6px double darkred;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 98%;
+    margin: 10px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+} 
+
+main > .about_content > .grid_about:hover {
+    transform: translateZ(50px) scale(1.005);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+main > .about_content > .grid_about > .about_items {
+    border: 1px solid darkred;
+}
+
+main > .about_content > .grid_about > .about_items > h2 {
+    font-size: 1.2em;
+    border-bottom: 2px solid darkred;
+    background-image: linear-gradient(darkgreen,rgb(0, 190, 0),darkgreen);
+    padding: 6px 0px 3px 10px;
+    color: yellow;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Naruto';
+    text-shadow: 2px 2px 0px black;
+}
+
+main > .about_content > .grid_about > .about_items > p {
+    padding: 5px;
+    line-height: 1.5;
+    font-family: 'Anime-Ace';
+    font-size: 0.75em;
+    margin: 2px;
+}
+
+main > .gallery_content > h1, .news_title {
+    text-align: center;
+    margin: 8px 0px 15px 0px;
+    background-image: linear-gradient(to right,transparent,#EE518B,transparent);
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    padding: 8px;
+    font-family: 'Naruto';
+    color: #FFAC11;
+}
+
+main > .gallery_content > .gallery_grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 40px;
+} 
+
+main > .gallery_content > .gallery_grid > .gallery_items, .news_items {
+    width: 40%;
+    border-radius: 10px;
+    border: 6px double darkgreen;
+    overflow: hidden;
+    background-color: #ee518a30;
+    transition: all 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main > .gallery_content > .gallery_grid > .gallery_items:hover, .news_items:hover {
+    transform: translateZ(50px) scale(1.025);
+    background-color: #ee518a60;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+main > .gallery_content > .gallery_grid > .gallery_items > figure > img, .news_img {
+    width: 100%;
+    border-bottom: 6px double darkgreen;
+}
+
+main > .gallery_content > .gallery_grid > .gallery_items > figure > .figure_components {
+    text-align: center;
+    margin: 10px 0px 15px 0px;
+}
+
+main > .gallery_content > .gallery_grid > .gallery_items > figure > .figure_components > h2 {
+    margin: 5px;
+    font-family: 'Naruto';
+    letter-spacing: 1px;
+    font-size: 1em;
+    color: #1D9CEB;
+    text-shadow: 2px 2px 0px black;
+}
+
+main > .gallery_content > .gallery_grid > .gallery_items > figure > .figure_components > h2 > span {
+    font-family: 'Naruto';
+    font-size: 1.4em;
+}
+
+main > .gallery_content > .gallery_grid > .gallery_items > figure > .figure_components > button, .news_btn {
+    padding: 10px 30px 7px 30px;
+    margin-top: 5px;
+    border: 6px double #ED8F10;
+    border-radius: 30px;
+    background-color: transparent;
+    transition: all 0.1s;
+    color: #c7760c;
+    font-family: 'Naruto';
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+main > .gallery_content > .gallery_grid > .gallery_items > figure > .figure_components > button:hover, .news_btn:hover {
+    background-color: #ed8d1041;
+    color: white;
+    font-weight: bold;
+    padding: 10px 33px 7px 33px;
+    cursor: pointer;
+}
+main > .gallery_content > .gallery_grid > .gallery_items > figure > .figure_components > button:active, .news_btn:active {
+    background-color: rgba(255, 255, 0, 0.335);
+    color: #ED8F10;
+}
+
+main > .services_content > h2 {
+    margin: 12px;
+}
+
+main > .services_content >.services_items {
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+    line-height: 1.5;
+}
+
+main > .services_content >.services_items > h3 {
+    font-size: 1.4em;
+    font-family: 'Naruto';
+    color: #1877F2;
+    text-shadow: 2px 2px 0px black;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right,transparent,#ee518a84,transparent);
+    width: fit-content;
+    margin: 5px auto;
+    padding: 3px 0px 1.5px 0px;
+}
+
+main > .services_content >.services_items > h3 > span {
+    font-family: 'Naruto';
+    color: #ED8F10;
+}
+
+main > .services_content >.services_items > p {
+    font-family: 'Anime-Ace';
+    font-size: 0.8em;
+}
+
+main > .news_content > .news_grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 40px 0px;
+}
+
+main > .news_content > .news_grid > .news_items > figure > .news_text {
+    width: 95%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+main > .news_content > .news_grid > .news_items > figure > .news_text > h1 {
+    font-family: 'Naruto';
+    letter-spacing: 1px;
+    font-size: 1.35em;
+    color: #1877F2;
+    text-shadow: 2px 2px 0px black;
+}
+
+main > .news_content > .news_grid > .news_items > figure > .news_text > h3 {
+    font-size: 0.8em;
+    padding: 5px 0px;
+    color: darkred;
+    font-family: 'Naruto';
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0px black;
+}
+
+main > .news_content > .news_grid > .news_items > figure > .news_text > h3 > span {
+    font-size: 1.4em;
+    font-family: 'Naruto';
+}
+
+main > .news_content > .news_grid > .news_items > figure > .news_text > p {
+    margin-bottom: 10px;
+    font-family: 'Anime-Ace';
+    font-size: 0.8em;
+}
+
+main > .news_content > .news_grid > .news_items > figure > .news_text > button {
+    display: block;
+    margin: 10px auto;
+}
+
+main > .contact_content {
+    background-color: rgba(100, 100, 100, 0.211);
+}
+
+main > .contact_content > .contact_form {
+    background-image: radial-gradient(red 50%, darkred);
+    border-radius: 10px;
+    width: 50%;
+    margin: 30px auto;
+    transition: all 0.3s, translate 0.3s ease, box-shadow 0.3s ease;
+}
+
+main > .contact_content > .contact_form:hover {
+    transform: translateZ(50px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+main > .contact_content > .contact_form > form > h1 {
+    background-image: linear-gradient(to top,darkgreen,rgb(0, 173, 0),darkgreen);
+    border-left: 20px double yellow;
+    border-right: 20px double yellow;
+    border-top: 6px solid rgb(0, 72, 0);
+    border-bottom: 6px solid rgb(0, 72, 0);
+    color: yellow;
+    text-align: center;
+    text-shadow: 2px 2px 0px black;
+    padding: 10px 0px 5px 0px;
+    letter-spacing: 2px;
+    font-family: 'Naruto';
+}
+
+main > .contact_content > .contact_form > form > .form_items {
+    width: 85%;
+    margin: 0 auto;
+}
+
+main > .contact_content > .contact_form > form > .form_items >.input_nome, .input_email, .input_password, .text_area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+main > .contact_content > .contact_form > form > .form_items label {
+    font-weight: bold;
+    color: yellow;
+    font-family: 'Naruto';
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0px black;
+}
+
+main > .contact_content > .contact_form > form > .form_items label > span {
+    font-family: 'Naruto';
+    font-size: 1.4em;
+}
+
+main > .contact_content > .contact_form > form > .form_items input {
+    border-radius: 16px;
+    border: 4px double yellow;
+    padding: 7px 0px 9px 0px;
+    background-color: rgba(255, 255, 0, 0.222);
+    text-indent: 10px;
+    font-family: 'Anime-Ace';
+}
+
+main > .contact_content > .contact_form > form > .form_items input:focus {
+    border-color: darkgreen;
+    outline: none;
+    border-width: 5px;
+}
+
+main > .contact_content > .contact_form > form > .form_items input:focus::placeholder {
+    color: darkgreen;
+}
+
+main > .contact_content > .contact_form > form > .form_items input::placeholder {
+    color: rgba(255, 255, 0, 0.755);
+    font-family: 'Anime-Ace';
+    font-size: 0.8em;
+    padding-bottom: 10px;
+}
+
+main > .contact_content > .contact_form > form > .form_items > .text_area > textarea {
+    height: 100px;
+    border-radius: 10px;
+    border: 4px double yellow;
+    background-color: rgba(255, 255, 0, 0.222);
+    text-indent: 10px;
+    padding-top: 7px;
+}
+
+main > .contact_content > .contact_form > form > .form_items > .text_area > textarea:focus {
+    border-color: darkgreen;
+    border-width: 5px;
+    outline: none;
+}
+
+main > .contact_content > .contact_form > form > .form_items > .text_area > textarea:focus::placeholder {
+    color: darkgreen;
+}
+
+main > .contact_content > .contact_form > form > .form_items > .text_area > textarea::placeholder {
+    color: rgba(255, 255, 0, 0.755);
+    font-family: 'Anime-Ace';
+    font-size: 0.8em;   
+    
+}
+
+main > .contact_content > .contact_form > form > .form_items > .send {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+
+}
+
+main > .contact_content > .contact_form > form > .form_items > .send > input {
+    width: 100%;
+    border-radius: 3px;
+    padding: 13px 0px 6.5px 0px;
+    background-image: linear-gradient(to top,black,rgb(59, 57, 57),black);
+    color: white;
+    border-top: none;
+    border-bottom: none;
+    border-left: 30px double yellow;
+    border-right: 30px double yellow;
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    transition: all 0.25s;
+    font-family: 'Naruto';
+    letter-spacing: 3px;
+    color: yellow;
+    text-shadow: 2.5px 2.5px 0px black
+}
+main > .contact_content > .contact_form > form > .form_items > .send > input:hover {
+    background-color: rgb(38, 38, 38);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    width: 95%;
+}
+main > .contact_content > .contact_form > form > .form_items > .send > input:active {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 90%;
+}
+
+footer {
+    background-image: linear-gradient(to top,black,rgb(78, 78, 78),black);
+    height: 80px;
+    margin-top: 30px;
+    border-left: 40px double red;
+    border-right: 40px double red;
+}
+
+footer > .footer_content {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer > .footer_content > .footer_items {
+    margin-top: 10px;
+    padding: 10px;
+    color: yellow;
+}
+
+footer > .footer_content > .footer_items > p {
+    font-family: 'Naruto' ;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 0px black;
+}
+
+footer > .footer_content > .footer_links > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+footer > .footer_content > .footer_links > ul > li > a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: all 0.25s;
+    border: 3px double yellow;
+}
+footer > .footer_content > .footer_links > ul > li > a:hover {
+    padding: 5px 20px;
+    font-weight: bold;
+    color: white;
+}
+footer > .footer_content > .footer_links > ul > li > a:active {
+    padding: 5px 20px;
+    font-weight: bold;
+    background-color: rgb(60, 60, 60);
+}
+footer > .footer_content > .footer_links > ul > li > .whats_link {
+    color: #25D366;
+    background-color: #11612e;
+}
+footer > .footer_content > .footer_links > ul > li > .whats_link::before {
+    content: url(../img/icons8-whatsapp.svg);
+    vertical-align: middle;
+    margin-right: 5px;
+}
+footer > .footer_content > .footer_links > ul > li > .whats_link:hover::before {
+    content: url(../img/icons8-whatsapp\ \(1\).svg);
+}
+footer > .footer_content > .footer_links > ul > li > .twi_link {
+    color: #1D9CEB;
+    background-color: #0c3d5c;
+}
+footer > .footer_content > .footer_links > ul > li > .twi_link::before {
+    content: url(../img/icons8-twitter.svg);
+    vertical-align: middle;
+    margin-right: 5px;
+}
+footer > .footer_content > .footer_links > ul > li > .twi_link:hover::before {
+    content: url(../img/icons8-twitter\ \(1\).svg);
+}
+footer > .footer_content > .footer_links > ul > li > .face_link {
+    color: #1877F2;
+    background-color: #0c3265;
+}
+footer > .footer_content > .footer_links > ul > li > .face_link::before {
+    content: url(../img/icons8-facebook-novo.svg);
+    vertical-align: middle;
+    margin-right: 5px;
+}
+footer > .footer_content > .footer_links > ul > li > .face_link:hover::before {
+    content: url(../img/icons8-facebook-novo\ \(1\).svg);
+}
+
+
+
+
+
